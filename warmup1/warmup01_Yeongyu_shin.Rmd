@@ -1,0 +1,78 @@
+---
+title: "warmup01_Yeongyu_shin"
+output: github_document
+---
+#*1.Star Wars*#
+
+**Kazuda Xiono**
+
+![](https://vignette.wikia.nocookie.net/starwars/images/a/a3/Kazuda.jpg/revision/latest/scale-to-width-down/500?cb=20180830051228)
+
+
+>*In my mind, that's what I was Kazuda Xiono, the best starfighter pilot in the galaxy."*
+
+Species | Human
+-|-|-
+Gender | Male
+Hair color | Black
+Eye color | Black
+Skin color | Light
+
+#*2.Cooking Recipe*#
+
+##**Apple Strudel**#
+
+###Ingredients#
+
+- Raisins
+- Dough
+- Apple Filling
+
+###Special Kitchen tool#
+
+-Not required
+
+###Steps#
+
+1. Prepare the raisins
+2. Make the dough
+3. Meanwhile, prepare the apples
+4. Prepare the breadcrumbs
+5. Heat your oven ti 400 degree
+6. Assemble the strudel
+
+![](https://smittenkitchendotcom.files.wordpress.com/2016/11/apple-strudel-apfelstrudel.jpg?w=1024)
+
+
+
+#*2.Euclidean Distance*#
+
+##Definition [edit](https://en.wikipedia.org/w/index.php?title=Euclidean_distance&action=edit&section=1)
+
+The Euclidean distance between points p and q is the length of the [line segment](https://en.wikipedia.org/wiki/Line_segment) connecting them.
+
+In [Cartesian coordinates](https://en.wikipedia.org/wiki/Cartesian_coordinates), if p = (p1, p2,..., pn) and q = (q1, q2,..., qn) are two points in [Euclidean n-space](https://en.wikipedia.org/wiki/Euclidean_space), then the distance (d) from p to q, or from q to p is given by the [Pythagorean formula](https://en.wikipedia.org/wiki/Pythagorean_theorem):[[1]](https://en.wikipedia.org/wiki/Euclidean_distance#cite_note-Anton-1)
+
+\[d(p,q) = d(q.p) = \sqrt{(q_1-p_1)^2+(q_2-p_2)^2+...+(q_n-p_n)^2)} = \sqrt{\sum_{n=1}^{n}(q_i-p_i)^2}\]
+
+The position of a point in a Euclidean n-space is a [Euclidean vector](https://en.wikipedia.org/wiki/Euclidean_vector). So, p and q may be represented as Euclidean vectors, starting from the origin of the space (initial point) with their tips (terminal points) ending at the two points. [The Euclidean norm](https://en.wikipedia.org/wiki/Euclidean_norm), or Euclidean length, or magnitude of a vector measures the length of the vector:[[1]](https://en.wikipedia.org/wiki/Euclidean_distance#cite_note-Anton-1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
