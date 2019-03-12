@@ -1,0 +1,88 @@
+---
+title: "Workout1"
+author: "Yeongyu Shin"
+output: github_document
+---
+##**Introduction**#
+In this article, I'll present the shot recods and statistics for 5 star basket ball players, Andre Iguodala, Draymond Green, Kevin Durant, Klay Thompson and Stephen Curry. They have shown extrarodinary record. It would be worth analyzing records of shots for those players
+
+The following are the record of effective shots
+
+##**Effective Shooting Percentage**#
+```{r echo=FALSE, results='asis', warning=FALSE, message=FALSE}
+library(dplyr)
+library(knitr)
+andre_iguodala <- read.csv(file = "~/hw-stat133/workout01/data/andre-iguodala.csv")
+andre_iguodala$player <- "iguodala" 
+draymond_green <- read.csv(file = "~/hw-stat133/workout01/data/draymond-green.csv")
+draymond_green$player = "green"
+kevin_durant <- read.csv(file = "~/hw-stat133/workout01/data/kevin-durant.csv")
+kevin_durant$player = "durant"
+klay_thompson <- read.csv(file = "~/hw-stat133/workout01/data/klay-thompson.csv")
+klay_thompson$player = "thompson"
+stephen_curry <- read.csv(file = "~/hw-stat133/workout01/data/stephen-curry.csv")
+stephen_curry$player = "curry"
+gsw <- rbind(andre_iguodala, draymond_green, kevin_durant, klay_thompson, stephen_curry)
+gsw1 <- filter(gsw, shot_type =="2PT Field Goal")
+gsw2 <- filter(gsw, shot_type =="3PT Field Goal")
+summary1 <- arrange(summarise(group_by(gsw1, player), 
+                      total = sum(shot_type == "2PT Field Goal"), made = sum(shot_made_flag == "y"), perc_made = made/total), desc(perc_made))
+summary2 <- arrange(summarise(group_by(gsw2, player), 
+                      total = sum(shot_type == "3PT Field Goal"), made = sum(shot_made_flag == "y"), perc_made = made/total), desc(perc_made))
+summary3 <- arrange(summarise(group_by(gsw, player), 
+                      total = sum(shot_type == "3PT Field Goal" | shot_type == "2PT Field Goal"), made = sum(shot_made_flag == "y"), perc_made = made/total), desc(perc_made))
+
+"2PT Effective Shooting % by Players"
+kable(summary1, caption = "2PT Effective Shooting % by Players")
+"3PT Effective Shooting % by Players"
+kable(summary2, caption = "3PT Effective Shooting % by Players")
+"Effective Shooting % by Players"
+kable(summary3, caption = "Effective Shooting % by Players")
+```
+
+###**Associated codes for computing the tables above**#
+```{r}
+summary1 <- arrange(summarise(group_by(gsw1, player), 
+                      total = sum(shot_type == "2PT Field Goal"), made = sum(shot_made_flag == "y"), perc_made = made/total), desc(perc_made))
+summary2 <- arrange(summarise(group_by(gsw2, player), 
+                      total = sum(shot_type == "3PT Field Goal"), made = sum(shot_made_flag == "y"), perc_made = made/total), desc(perc_made))
+summary3 <- arrange(summarise(group_by(gsw, player), 
+                      total = sum(shot_type == "3PT Field Goal" | shot_type == "2PT Field Goal"), made = sum(shot_made_flag == "y"), perc_made = made/total), desc(perc_made))
+
+```
+
+##**Shooting Spots Graph**#
+It would be worth as well analyzing spots that each shot was made by those players. Green dots represent successful shots while red dots represent failed ones.
+
+###Andre Iguodala
+```{r out.width='80%', echo=FALSE, fig.align='center'}
+knitr::include_graphics('C:/Users/terta1037/Documents/hw-stat133/workout01/images/andre.jfif')
+```
+
+###Draymond Green
+```{r out.width='80%', echo=FALSE, fig.align='center'}
+knitr::include_graphics('C:/Users/terta1037/Documents/hw-stat133/workout01/images/draymond.jfif')
+```
+
+###Kevin Durant
+```{r out.width='80%', echo=FALSE, fig.align='center'}
+knitr::include_graphics('C:/Users/terta1037/Documents/hw-stat133/workout01/images/kevin.jfif')
+```
+
+###Klay Thompson
+```{r out.width='80%', echo=FALSE, fig.align='center'}
+knitr::include_graphics('C:/Users/terta1037/Documents/hw-stat133/workout01/images/klay.jfif')
+```
+
+###Stephen Curry
+```{r out.width='80%', echo=FALSE, fig.align='center'}
+knitr::include_graphics('C:/Users/terta1037/Documents/hw-stat133/workout01/images/stephen.jfif')
+```
+
+###Shooting spots for each player
+```{r out.width='80%', echo=FALSE, fig.align='center'}
+knitr::include_graphics('C:/Users/terta1037/Documents/hw-stat133/workout01/images/gsw-shot-charts.png')
+```
+
+##**Summary**#
+It has been found that the players obviously more successfull in 2 points shots. There was no absolute dominance over all kinds of shots. Iguodala has the higest effect shooting rate in terms of 2PT shots while Thompson has the highest in terms of 3 PT and Durant in terms of the total. Green ranked the lowest for the all shots.
