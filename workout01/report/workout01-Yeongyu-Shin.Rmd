@@ -54,28 +54,38 @@ summary3 <- arrange(summarise(group_by(gsw, player),
 ##**Shooting Spots Graph**#
 It would be worth as well analyzing spots that each shot was made by those players. Green dots represent successful shots while red dots represent failed ones.
 
-###Andre Iguodala
-![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/andre.jfif)
-
-
-###Draymond Green
-![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/draymond.jfif)
-
-
-###Kevin Durant
-![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/kevin.jfif)
-
-
-###Klay Thompson
-![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/klay.jfif)
-
-
-###Stephen Curry
-![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/stephen.jfif)
-
 
 ###Shooting spots for each player
-![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/gsw-shot-charts.png)
+``````{r, echo=FALSE, warning=FALSE}
+library(ggplot2)
+library(grid)
+library(jpeg)
+court_file <- "~/hw-stat133/workout01/images/nba-court.jpg"
+court_image <- rasterGrob(readJPEG(court_file),
+                          width = unit(1, "npc"),
+                          height = unit(1, "npc"))
+thompson_f <- klay <- read.csv("~/hw-stat133/workout01/data/klay-thompson.csv", stringsAsFactors = FALSE)
+thompson_f$player = "thompson"
+iguodala_f <- read.csv("~/hw-stat133/workout01/data/andre-iguodala.csv", stringsAsFactors = FALSE)
+iguodala_f$player = "iguodala"
+green_f <- read.csv("~/hw-stat133/workout01/data/draymond-green.csv", stringsAsFactors = FALSE)
+green_f$player = "green"
+durant_f <- read.csv("~/hw-stat133/workout01/data/kevin-durant.csv", stringsAsFactors = FALSE)
+durant_f$player = "durant"
+curry_f <- read.csv("~/hw-stat133/workout01/data/stephen-curry.csv", stringsAsFactors = FALSE)
+curry_f$player = "curry"
+gsw <- rbind(thompson_f, iguodala_f, green_f, durant_f, curry_f)
+boolen11 <- gsw$shot_made_flag == 'n'
+gsw$shot_made_flag[boolen11] = "shot_no"
+boolen12 <- gsw$shot_made_flag == "y"
+gsw$shot_made_flag[boolen12] = "shot_yes"
+gsw1 = ggplot(data = gsw) + annotation_custom(court_image, -250, 250, -50, 420) + 
+  geom_point(aes(x = x, y = y, color = shot_made_flag)) +
+  ylim(-50, 420) + ggtitle('Shot Chart(2016 season)')+
+  theme_minimal()
+gsw_shot_charts <- gsw1 + facet_wrap( ~ player, ncol = 3)
+gsw_shot_charts
+```
 
 ##**Summary**#
 It has been found that the players obviously more successfull in 2 points shots. There was no absolute dominance over all kinds of shots. Iguodala has the higest effect shooting rate in terms of 2PT shots while Thompson has the highest in terms of 3 PT and Durant in terms of the total. Green ranked the lowest for the all shots.

@@ -58,29 +58,9 @@ summary3 <- arrange(summarise(group_by(gsw, player),
 
 It would be worth as well analyzing spots that each shot was made by those players. Green dots represent successful shots while red dots represent failed ones.
 
-### Andre Iguodala
-
-![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/andre.jfif)
-
-### Draymond Green
-
-![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/draymond.jfif)
-
-### Kevin Durant
-
-![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/kevin.jfif)
-
-### Klay Thompson
-
-![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/klay.jfif)
-
-### Stephen Curry
-
-![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/stephen.jfif)
-
 ### Shooting spots for each player
 
-![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/gsw-shot-charts.png)
+![](workout01-Yeongyu-Shin_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
 **Summary**
 -----------
