@@ -55,34 +55,27 @@ summary3 <- arrange(summarise(group_by(gsw, player),
 It would be worth as well analyzing spots that each shot was made by those players. Green dots represent successful shots while red dots represent failed ones.
 
 ###Andre Iguodala
-```{r out.width='80%', echo=FALSE, fig.align='center'}
-knitr::include_graphics('C:/Users/terta1037/Documents/hw-stat133/workout01/images/andre.jfif')
-```
+![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/andre.jfif)
+
 
 ###Draymond Green
-```{r out.width='80%', echo=FALSE, fig.align='center'}
-knitr::include_graphics('C:/Users/terta1037/Documents/hw-stat133/workout01/images/draymond.jfif')
-```
+![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/draymond.jfif)
+
 
 ###Kevin Durant
-```{r out.width='80%', echo=FALSE, fig.align='center'}
-knitr::include_graphics('C:/Users/terta1037/Documents/hw-stat133/workout01/images/kevin.jfif')
-```
+![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/kevin.jfif)
+
 
 ###Klay Thompson
-```{r out.width='80%', echo=FALSE, fig.align='center'}
-knitr::include_graphics('C:/Users/terta1037/Documents/hw-stat133/workout01/images/klay.jfif')
-```
+![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/klay.jfif)
+
 
 ###Stephen Curry
-```{r out.width='80%', echo=FALSE, fig.align='center'}
-knitr::include_graphics('C:/Users/terta1037/Documents/hw-stat133/workout01/images/stephen.jfif')
-```
+![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/stephen.jfif)
+
 
 ###Shooting spots for each player
-```{r out.width='80%', echo=FALSE, fig.align='center'}
-knitr::include_graphics('C:/Users/terta1037/Documents/hw-stat133/workout01/images/gsw-shot-charts.png')
-```
+![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/gsw-shot-charts.png)
 
 ##**Summary**#
 It has been found that the players obviously more successfull in 2 points shots. There was no absolute dominance over all kinds of shots. Iguodala has the higest effect shooting rate in terms of 2PT shots while Thompson has the highest in terms of 3 PT and Durant in terms of the total. Green ranked the lowest for the all shots.

@@ -60,27 +60,27 @@ It would be worth as well analyzing spots that each shot was made by those playe
 
 ### Andre Iguodala
 
-<img src="C:/Users/terta1037/Documents/hw-stat133/workout01/images/andre.jfif" width="80%" style="display: block; margin: auto;" />
+![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/andre.jfif)
 
 ### Draymond Green
 
-<img src="C:/Users/terta1037/Documents/hw-stat133/workout01/images/draymond.jfif" width="80%" style="display: block; margin: auto;" />
+![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/draymond.jfif)
 
 ### Kevin Durant
 
-<img src="C:/Users/terta1037/Documents/hw-stat133/workout01/images/kevin.jfif" width="80%" style="display: block; margin: auto;" />
+![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/kevin.jfif)
 
 ### Klay Thompson
 
-<img src="C:/Users/terta1037/Documents/hw-stat133/workout01/images/klay.jfif" width="80%" style="display: block; margin: auto;" />
+![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/klay.jfif)
 
 ### Stephen Curry
 
-<img src="C:/Users/terta1037/Documents/hw-stat133/workout01/images/stephen.jfif" width="80%" style="display: block; margin: auto;" />
+![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/stephen.jfif)
 
 ### Shooting spots for each player
 
-<img src="C:/Users/terta1037/Documents/hw-stat133/workout01/images/gsw-shot-charts.png" width="80%" style="display: block; margin: auto;" />
+![](C:/Users/terta1037/Documents/hw-stat133/workout01/images/gsw-shot-charts.png)
 
 **Summary**
 -----------
