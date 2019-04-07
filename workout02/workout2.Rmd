@@ -1,14 +1,14 @@
+---
+title: "workout2"
+output: html_document
+runtime: shiny
+---
+
+```{r}
 library(ggplot2)
 library(shiny)
 library(reshape2)
 library(rsconnect)
-
-rsconnect::setAccountInfo(name='yeongyushin',
-                          token='5CFC081E20AEAAA2700272CE0B5C1834',
-                          secret='CmOadnAkw6EDCI+1EL/kuV5U/6I3s7HY5WgknnwS')
-library(rsconnect)
-rsconnect::deployApp('~/Workout21.rmd')
-
 
 
 ui <- fluidPage(
@@ -185,3 +185,9 @@ server <- function(input, output) {
 }
 # Create Shiny app ----
 shinyApp(ui, server)
+
+
+
+
+
+```
