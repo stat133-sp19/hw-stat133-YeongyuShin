@@ -1,0 +1,16 @@
+Package: binomial
+Type: Package
+Title: Compute Binomials
+Version: 0.1.0
+Authors@R: person("Yeongyu", "Shin", email = "terta1037@berkeley.edu",
+                  role = c("aut", "cre"))
+Maintainer: Yeongyu Shin <terta1037@berkeley.edu>
+Description: Functions that helps compute binomials
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1

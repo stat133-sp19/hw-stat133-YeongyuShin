@@ -1,0 +1,56 @@
+---
+output:
+  github_document:
+    html_preview: false
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+
+## Overview
+
+`"binomial` is a package that provides functions helpful in computing binomials
+
+- `bin_choose` computes choose n k
+- `bin_distribution` build a table with # of success and probs.
+- `bin_cumulatve` build a table on top of distribution a collumn for culmulative.
+- `bin_probability` computes binomial probability.
+- `bin_variable` useful for computng various statistics given binomials.
+
+
+## Motivation
+
+This package has been created for users who have to compute binomials but don't want to go thorugh hassles of making thier own custom functions.
+
+
+## Installation
+
+Install the development version from GitHub via the package `"devtools"`:
+
+## Usage
+
+```{r}
+library(binomial)
+# checkers
+check_trials(5)
+check_prob(0.5)
+check_success(2, 2)
+# auxiliaries
+aux_kurtosis(5, 0.5)
+aux_mean(5, 0.5)
+aux_mode(5, 0.5)
+aux_variance(5, 0.5)
+aux_skewness(5, 0.5)
+# binomials functions
+bin_choose(5, 2)
+bin_probability(2, 3, 0.5)
+bin_distribution(5, 0.5)
+bin_culmulative(5, 0.5)
+bin_variable(5, 0.5)
+```

@@ -1,0 +1,69 @@
+---
+title: "introduction"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(binomial)
+```
+
+## Binomial
+
+The package `binomial` helps you compute binomial probability without making your own binomial functions manually.
+
+
+## Checkers
+
+Checkers check if input is in right form:
+
+```{r}
+check_prob(0.5)
+check_trials(5)
+check_success(2, 5)
+```
+
+
+## Auxillarys
+
+Auxillary functions compute basic figure such as mean, mode, variance etc given trials and prob
+
+```{r}
+aux_mean(5, 0.5)
+aux_mode(5, 0.5)
+aux_variance(5, 0.5)
+aux_skewness(5, 0.5)
+aux_kurtosis(5, 0.5)
+```
+
+
+## Binomials
+
+Binomial functions compute binomial probability, distribution and even culmulative and will give you nice table or plot corresponding to given distribution.
+
+```{r}
+bin_choose(5, 2)
+bin_probability(2, 5, 0.5)
+bin_distribution(5, 0.5)
+bin_culmulative(5, 0.5)
+a <- bin_distribution(5, 0.5)
+a
+plot(a)
+b <- bin_culmulative(5, 0.5)
+b
+plot(b)
+bin_variable(5, 0.2)
+c <- bin_variable(5, 0.2)
+c
+summary(c)
+```
